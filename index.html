@@ -1,0 +1,1918 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Essential Lawn & Garden Keeper</title>
+  <meta name="description" content="Professional lawn and garden maintenance across Northshore, Central and South Auckland. Quality service at an affordable price. Free quotes available." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/FullLogo_(2)_-_TOKASA_VAKALOLOMA.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Essential Lawn & Garden Keeper | Lawn & Garden Services Auckland" />
+  <meta property="og:description" content="Professional lawn and garden maintenance across Northshore, Central and South Auckland. Quality service at an affordable price. Free quotes available." />
+  <meta property="og:image" content="/FullLogo_(2)_-_TOKASA_VAKALOLOMA.png" />
+  <meta property="og:url" content="https://essentialkeeper.co.nz" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Essential Lawn & Garden Keeper | Lawn & Garden Services Auckland" />
+  <meta name="twitter:description" content="Professional lawn and garden maintenance across Northshore, Central and South Auckland. Quality service at an affordable price. Free quotes available." />
+  <meta name="twitter:image" content="/logo.png" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Essential Lawn & Garden Keeper",
+    "telephone": "022 035 1400",
+    "email": "admin@essentialkeeper.co.nz",
+    "areaServed": ["Northshore Auckland", "Central Auckland"],
+    "description": "Professional lawn and garden maintenance across Northshore, Central and South Auckland.",
+    "priceRange": "$$",
+    "openingHours": "Mo-Sa 07:00-18:00"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* =========================================
+       CSS CUSTOM PROPERTIES
+    ========================================= */
+    :root {
+      --bg: #0a0f0a;
+      --bg-card: #111811;
+      --bg-card-hover: #162016;
+      --green: #5cb85c;
+      --green-dark: #4a9e4a;
+      --green-light: #7dcf7d;
+      --white: #ffffff;
+      --grey-100: #f5f5f5;
+      --grey-200: #e0e0e0;
+      --grey-400: #9e9e9e;
+      --grey-600: #616161;
+      --grey-800: #212121;
+      --border: rgba(92, 184, 92, 0.15);
+      --border-hover: rgba(92, 184, 92, 0.4);
+      --font-heading: 'Bebas Neue', sans-serif;
+      --font-body: 'Montserrat', sans-serif;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.4);
+      --shadow-green: 0 4px 24px rgba(92,184,92,0.15);
+      --transition: 0.3s ease;
+    }
+
+    /* =========================================
+       RESET & BASE
+    ========================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; }
+
+    a { color: inherit; text-decoration: none; }
+
+    ul { list-style: none; }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      padding: 96px 0;
+    }
+
+    .section-label {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--grey-400);
+      max-width: 540px;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      border: none;
+      transition: all var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: var(--bg);
+    }
+
+    .btn-primary:hover {
+      background: var(--green-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-green);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--green);
+      color: var(--green);
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--green);
+      border: 2px solid var(--green);
+      padding: 10px 22px;
+      font-size: 0.85rem;
+    }
+
+    .btn-ghost:hover {
+      background: var(--green);
+      color: var(--bg);
+    }
+
+    /* =========================================
+       FADE-IN ANIMATION
+    ========================================= */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================================
+       NAV
+    ========================================= */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 16px 0;
+      transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
+    }
+
+    .nav.scrolled {
+      background: rgba(10, 15, 10, 0.97);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+      padding: 10px 0;
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .nav-logo img {
+      height: 48px;
+      width: auto;
+    }
+
+    .nav-logo-text {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      line-height: 1.1;
+    }
+
+    .nav-logo-text span {
+      color: var(--green);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--grey-200);
+      transition: color var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--green);
+    }
+
+    .nav-cta {
+      padding: 10px 22px;
+      font-size: 0.82rem;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      transition: all var(--transition);
+      border-radius: 2px;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10,15,10,0.98);
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      backdrop-filter: blur(12px);
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      letter-spacing: 0.08em;
+      color: var(--white);
+      transition: color var(--transition);
+    }
+
+    .mobile-menu a:hover {
+      color: var(--green);
+    }
+
+    .mobile-menu .btn {
+      margin-top: 8px;
+    }
+
+    .mobile-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 2rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    /* =========================================
+       HERO
+    ========================================= */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 100px;
+      padding-bottom: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background:
+        linear-gradient(to right, rgba(10,15,10,0.92) 0%, rgba(10,15,10,0.7) 50%, rgba(10,15,10,0.55) 100%),
+        url('/Hero.jpg') center center / cover no-repeat;
+      pointer-events: none;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(92,184,92,0.1);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 6px 14px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 24px;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.5); }
+    }
+
+    .hero-title {
+      font-size: clamp(3.5rem, 7vw, 6rem);
+      color: var(--white);
+      margin-bottom: 20px;
+      line-height: 1.0;
+    }
+
+    .hero-title .accent {
+      color: var(--green);
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--grey-400);
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 440px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .hero-ctas .btn {
+      font-size: 0.95rem;
+      padding: 16px 32px;
+    }
+
+    /* Hero Form Card */
+    .hero-form-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: var(--shadow);
+    }
+
+    .form-card-title {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .form-card-sub {
+      font-size: 0.85rem;
+      color: var(--grey-400);
+      margin-bottom: 24px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--grey-400);
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      transition: border-color var(--transition), background var(--transition);
+      outline: none;
+      appearance: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--green);
+      background: rgba(92,184,92,0.04);
+    }
+
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235cb85c' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      background-color: rgba(255,255,255,0.04);
+      padding-right: 36px;
+    }
+
+    .form-group select option {
+      background: #1a2a1a;
+      color: var(--white);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 15px;
+      font-size: 0.95rem;
+      justify-content: center;
+      margin-top: 4px;
+    }
+
+    .form-disclaimer {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--grey-600);
+      margin-top: 10px;
+    }
+
+    .form-success {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .form-success .success-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    .form-success h3 {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .form-success p {
+      color: var(--grey-400);
+      font-size: 0.9rem;
+    }
+
+    /* =========================================
+       TRUST BAR
+    ========================================= */
+    .trust-bar {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+
+    .trust-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 32px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--grey-200);
+    }
+
+    .trust-item + .trust-item {
+      border-left: 1px solid var(--border);
+    }
+
+    .trust-icon {
+      color: var(--green);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* =========================================
+       SERVICES
+    ========================================= */
+    .services-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .services-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+      cursor: default;
+    }
+
+    .service-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-green);
+    }
+
+    .service-icon {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .service-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .service-desc {
+      font-size: 0.88rem;
+      color: var(--grey-400);
+      line-height: 1.7;
+    }
+
+    /* =========================================
+       ABOUT
+    ========================================= */
+    .about {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-logo-wrap img {
+      max-width: 420px;
+      width: 100%;
+      border-radius: var(--radius);
+      object-fit: cover;
+    }
+
+    .about-logo-placeholder {
+      width: 300px;
+      height: 300px;
+      background: rgba(92,184,92,0.05);
+      border: 2px dashed var(--border);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: var(--grey-600);
+    }
+
+    .about-content .section-title {
+      margin-bottom: 20px;
+    }
+
+    .about-body {
+      font-size: 1rem;
+      color: var(--grey-400);
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+
+    .cert-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(92,184,92,0.1);
+      border: 1px solid var(--border-hover);
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--green);
+    }
+
+    .cert-badge .cert-icon {
+      font-size: 1.3rem;
+    }
+
+    /* =========================================
+       WHY CHOOSE US
+    ========================================= */
+    .why-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .why-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .why-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+
+    .why-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-4px);
+    }
+
+    .why-number {
+      font-family: var(--font-heading);
+      font-size: 3.5rem;
+      color: var(--green);
+      opacity: 0.3;
+      line-height: 1;
+      margin-bottom: 12px;
+      transition: opacity var(--transition);
+    }
+
+    .why-card:hover .why-number {
+      opacity: 0.7;
+    }
+
+    .why-title {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .why-desc {
+      font-size: 0.88rem;
+      color: var(--grey-400);
+      line-height: 1.7;
+    }
+
+    /* =========================================
+       GALLERY
+    ========================================= */
+    .gallery {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .gallery-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .gallery-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gallery-item {
+      aspect-ratio: 3/4;
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      background: var(--bg-card);
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-item-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(10,15,10,0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-item-overlay {
+      background: rgba(10,15,10,0.45);
+    }
+
+    .gallery-item-overlay svg {
+      opacity: 0;
+      transform: scale(0.8);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-item-overlay svg {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(0,0,0,0.92);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      backdrop-filter: blur(6px);
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox-img {
+      max-width: 90vw;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 60px rgba(0,0,0,0.7);
+      animation: lb-in 0.25s ease;
+    }
+
+    @keyframes lb-in {
+      from { opacity: 0; transform: scale(0.94); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 2.2rem;
+      cursor: pointer;
+      line-height: 1;
+      opacity: 0.7;
+      transition: opacity var(--transition);
+    }
+
+    .lightbox-close:hover {
+      opacity: 1;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--white);
+      font-size: 1.5rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--transition);
+    }
+
+    .lightbox-prev { left: 20px; }
+    .lightbox-next { right: 20px; }
+
+    .lightbox-prev:hover,
+    .lightbox-next:hover {
+      background: rgba(92,184,92,0.25);
+      border-color: var(--green);
+    }
+
+    /* =========================================
+       REVIEWS
+    ========================================= */
+    .reviews-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .reviews-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+
+    .review-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-4px);
+    }
+
+    .review-stars {
+      color: #fbbf24;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+
+    .review-quote {
+      font-size: 0.95rem;
+      color: var(--grey-200);
+      line-height: 1.75;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .review-quote::before {
+      content: '"';
+      font-family: Georgia, serif;
+      font-size: 3rem;
+      color: var(--green);
+      opacity: 0.3;
+      line-height: 0;
+      vertical-align: -0.6em;
+      margin-right: 2px;
+    }
+
+    .reviewer-name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--white);
+    }
+
+    .reviewer-suburb {
+      font-size: 0.8rem;
+      color: var(--grey-400);
+    }
+
+    .reviews-cta {
+      text-align: center;
+    }
+
+    /* =========================================
+       CONTACT
+    ========================================= */
+    .contact {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+    }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .contact-info .section-title {
+      margin-bottom: 16px;
+    }
+
+    .contact-info .section-sub {
+      margin-bottom: 36px;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .contact-detail-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(92,184,92,0.1);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .contact-detail-text strong {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--grey-400);
+      margin-bottom: 3px;
+    }
+
+    .contact-detail-text a {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--white);
+      transition: color var(--transition);
+    }
+
+    .contact-detail-text a:hover {
+      color: var(--green);
+    }
+
+    .contact-detail-text span {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+    .footer {
+      background: #060c06;
+      border-top: 1px solid var(--border);
+      padding: 56px 0 0;
+    }
+
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 40px;
+      align-items: start;
+      padding-bottom: 48px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-logo img {
+      height: 52px;
+      width: auto;
+    }
+
+    .footer-logo-text {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      line-height: 1.1;
+    }
+
+    .footer-logo-text span {
+      color: var(--green);
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .footer-nav-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--grey-600);
+      margin-bottom: 4px;
+    }
+
+    .footer-nav a {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--grey-400);
+      transition: color var(--transition);
+    }
+
+    .footer-nav a:hover {
+      color: var(--green);
+    }
+
+    .footer-ctas {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+    }
+
+    .footer-ctas .btn {
+      width: 200px;
+      justify-content: center;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: var(--grey-600);
+    }
+
+    .footer-credit {
+      font-size: 0.8rem;
+      color: var(--grey-600);
+    }
+
+    .footer-credit a {
+      color: var(--grey-400);
+      transition: color var(--transition);
+    }
+
+    .footer-credit a:hover {
+      color: var(--green);
+    }
+
+    /* =========================================
+       RESPONSIVE
+    ========================================= */
+    @media (max-width: 1100px) {
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 120px;
+      }
+
+      .hero-title {
+        font-size: clamp(3rem, 10vw, 5rem);
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        text-align: center;
+      }
+
+      .about-logo-wrap {
+        order: -1;
+      }
+
+      .cert-badge {
+        margin: 0 auto;
+      }
+
+      .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer-logo {
+        justify-content: center;
+      }
+
+      .footer-ctas {
+        align-items: center;
+      }
+
+      .footer-ctas .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .section {
+        padding: 72px 0;
+      }
+
+      .trust-item {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+      }
+
+      .trust-item + .trust-item {
+        border-left: none;
+        border-top: 1px solid var(--border);
+      }
+
+      .trust-inner {
+        flex-direction: column;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-form-card {
+        padding: 24px 20px;
+      }
+
+      .hero-ctas {
+        flex-direction: column;
+      }
+
+      .hero-ctas .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo" aria-label="Essential Lawn & Garden Keeper">
+          <img src="/FullLogo_(2)_-_TOKASA_VAKALOLOMA.png" alt="Essential Lawn & Garden Keeper logo" onerror="this.style.display='none'" />
+          <span class="nav-logo-text">Essential<br /><span>Lawn &amp; Garden Keeper</span></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#hero-form" class="btn btn-primary nav-cta">Free Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">&#215;</button>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#reviews" class="mobile-link">Reviews</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#hero-form" class="btn btn-primary">Free Quote</a>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Left: Copy -->
+        <div class="hero-copy">
+          <div class="hero-eyebrow">Northshore, Central &amp; South Auckland</div>
+          <h1 class="hero-title">Your Lawn.<br /><span class="accent">Our Passion.</span></h1>
+          <p class="hero-sub">Professional lawn and garden maintenance across Northshore, Central and South Auckland. Quality results at a price you'll love — free quotes, no obligation.</p>
+          <div class="hero-ctas">
+            <a href="#hero-form" class="btn btn-primary">Get a Free Quote</a>
+            <a href="tel:02203511400" class="btn btn-outline">Call 022 035 1400</a>
+          </div>
+        </div>
+
+        <!-- Right: Enquiry Form -->
+        <div class="hero-form-card" id="hero-form">
+          <div id="heroFormWrap">
+            <h2 class="form-card-title">Request a Quote</h2>
+            <p class="form-card-sub">We'll get back to you within 24 hours.</p>
+            <form id="heroForm" novalidate>
+              <input type="hidden" name="access_key" value="e6ceac27-2e22-458f-a1e1-c1334243478b" />
+              <input type="hidden" name="subject" value="New Quote Request — Essential Lawn &amp; Garden Keeper" />
+              <input type="checkbox" name="botcheck" style="display:none" />
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="h-first">First Name</label>
+                  <input type="text" id="h-first" name="first_name" placeholder="Metui" required />
+                </div>
+                <div class="form-group">
+                  <label for="h-last">Last Name</label>
+                  <input type="text" id="h-last" name="last_name" placeholder="Smith" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="h-phone">Phone</label>
+                <input type="tel" id="h-phone" name="phone" placeholder="021 123 4567" required />
+              </div>
+              <div class="form-group">
+                <label for="h-service">Service Required</label>
+                <select id="h-service" name="service" required>
+                  <option value="" disabled selected>Select a service…</option>
+                  <option>Lawn Mowing</option>
+                  <option>Garden Maintenance</option>
+                  <option>Section Clean-Up</option>
+                  <option>Hedging &amp; Trimming</option>
+                  <option>Weed Control</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="h-msg">Message</label>
+                <textarea id="h-msg" name="message" placeholder="Tell us about your property or any specific requirements…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">
+                Request Free Quote <span aria-hidden="true">→</span>
+              </button>
+              <p class="form-disclaimer">100% free, no obligation.</p>
+            </form>
+          </div>
+          <div id="heroFormSuccess" class="form-success" style="display:none">
+            <div class="success-icon">✅</div>
+            <h3>Quote Request Sent!</h3>
+            <p>Thank you. We'll be in touch within 24 hours.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRUST BAR ===================== -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-inner">
+        <div class="trust-item">
+          <span class="trust-icon">📅</span>
+          3+ Years Serving Auckland
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">💬</span>
+          Free Quotes
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">🏅</span>
+          Certified Chemical Handler
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">⭐</span>
+          5-Star Rated
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="services-header">
+        <p class="section-label">What We Do</p>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-sub">From regular lawn mowing to full garden transformations — we handle it all with care and expertise.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <span class="service-icon">🌿</span>
+          <h3 class="service-title">Lawn Mowing</h3>
+          <p class="service-desc">Regular mowing schedules tailored to your lawn's needs. We leave your lawn looking sharp and tidy every time.</p>
+        </div>
+        <div class="service-card fade-in">
+          <span class="service-icon">🌱</span>
+          <h3 class="service-title">Garden Maintenance</h3>
+          <p class="service-desc">Ongoing garden care including weeding, pruning, and planting. We keep your garden healthy and thriving year-round.</p>
+        </div>
+        <div class="service-card fade-in">
+          <span class="service-icon">🧹</span>
+          <h3 class="service-title">Section Clean-Ups</h3>
+          <p class="service-desc">Overgrown section? We'll clear it out and restore order. Ideal for pre-sale prep, new homes, or long-neglected properties.</p>
+        </div>
+        <div class="service-card fade-in">
+          <span class="service-icon">✂️</span>
+          <h3 class="service-title">Hedge Trimming</h3>
+          <p class="service-desc">Clean, precise hedging and shrub trimming to enhance your property's kerb appeal. Neat edges every visit.</p>
+        </div>
+        <div class="service-card fade-in">
+          <span class="service-icon">🌾</span>
+          <h3 class="service-title">Weed Control</h3>
+          <p class="service-desc">Professional weed management using certified chemical handling techniques. We eliminate weeds at the root for lasting results.</p>
+        </div>
+        <div class="service-card fade-in">
+          <span class="service-icon">📋</span>
+          <h3 class="service-title">Regular Contracts</h3>
+          <p class="service-desc">Set-and-forget maintenance contracts for residential and commercial properties. Consistent service you can rely on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-logo-wrap fade-in">
+          <img src="/702798751_1358676566314542_7198189953810808499_n.jpg" alt="Essential Lawn & Garden Keeper" />
+        </div>
+        <div class="about-content fade-in">
+          <p class="section-label">About Us</p>
+          <h2 class="section-title">Auckland Based.<br />Quality Focused.</h2>
+          <p class="about-body">Essential Lawn &amp; Garden Keeper has been proudly serving Northshore, Central and South Auckland for over 3 years. Founded by Metui Vakaloloma, our mission is simple: deliver outstanding lawn and garden results that make your property shine — at a price that's genuinely affordable.</p>
+          <p class="about-body">We care deeply about the work we do and treat every property as if it were our own. Whether you need a one-off tidy-up or ongoing maintenance, you'll always receive the same high standard of service and professionalism.</p>
+          <div class="cert-badge">
+            <span class="cert-icon">🏅</span>
+            Certified Chemical Handler
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="why-header">
+        <p class="section-label">Why Us</p>
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-sub">We're proud of the values that drive everything we do for our Auckland customers.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card fade-in">
+          <div class="why-number">01</div>
+          <h3 class="why-title">Reliable & Consistent</h3>
+          <p class="why-desc">We show up on schedule, every time. You can count on us to deliver consistent results without the follow-up phone calls.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-number">02</div>
+          <h3 class="why-title">Certified & Compliant</h3>
+          <p class="why-desc">Our team holds a Certified Chemical Handler qualification, ensuring all weed and pest treatments are safe and compliant.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-number">03</div>
+          <h3 class="why-title">Affordable Pricing</h3>
+          <p class="why-desc">Premium service at fair prices. We believe quality lawn and garden care should be accessible to every homeowner in Auckland.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-number">04</div>
+          <h3 class="why-title">Free Quotes</h3>
+          <p class="why-desc">No cost, no commitment. Get a detailed quote for your property and let us show you what we can do before you spend a cent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="gallery-header">
+        <p class="section-label">Our Work</p>
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-sub">A glimpse of the results we deliver across Auckland's lawns and gardens.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in" data-src="/1.jpg" data-index="0" role="button" tabindex="0" aria-label="View image 1">
+          <img src="/1.jpg" alt="Lawn and garden work by Essential Lawn &amp; Garden Keeper" />
+          <div class="gallery-item-overlay">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
+        </div>
+        <div class="gallery-item fade-in" data-src="/707227579_1001469109070713_3782132960895992822_n.jpg" data-index="1" role="button" tabindex="0" aria-label="View image 2">
+          <img src="/707227579_1001469109070713_3782132960895992822_n.jpg" alt="Garden maintenance by Essential Lawn & Garden Keeper" />
+          <div class="gallery-item-overlay">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
+        </div>
+        <div class="gallery-item fade-in" data-src="/3.jpg" data-index="2" role="button" tabindex="0" aria-label="View image 3">
+          <img src="/3.jpg" alt="Section clean-up by Essential Lawn &amp; Garden Keeper" />
+          <div class="gallery-item-overlay">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" id="lbClose" aria-label="Close">&#215;</button>
+        <button class="lightbox-prev" id="lbPrev" aria-label="Previous image">&#8592;</button>
+        <img class="lightbox-img" id="lbImg" src="" alt="Gallery image" />
+        <button class="lightbox-next" id="lbNext" aria-label="Next image">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS ===================== -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="reviews-header">
+        <p class="section-label">Google Reviews</p>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-sub">Don't take our word for it — here's what Auckland homeowners say about our work.</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card fade-in">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">Absolutely brilliant service. Metui and the team transformed our overgrown lawn into something we're genuinely proud of. Will definitely be using them regularly.</p>
+          <div class="reviewer-name">Sarah T.</div>
+          <div class="reviewer-suburb">Takapuna, Northshore</div>
+        </div>
+        <div class="review-card fade-in">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">Reliable, professional, and great value. They show up when they say they will and always leave the property looking immaculate. Highly recommend!</p>
+          <div class="reviewer-name">James M.</div>
+          <div class="reviewer-suburb">Ponsonby, Central Auckland</div>
+        </div>
+        <div class="review-card fade-in">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">Used Essential Lawn &amp; Garden Keeper for a full section clean-up and the results were incredible. Competitive pricing and the team was friendly and hardworking. Five stars easily.</p>
+          <div class="reviewer-name">Priya K.</div>
+          <div class="reviewer-suburb">Albany, Northshore</div>
+        </div>
+      </div>
+      <div class="reviews-cta">
+        <a href="https://share.google/uBgBUf09cxjFV6Usp" target="_blank" rel="noopener" class="btn btn-ghost">
+          View All Google Reviews →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+
+        <!-- Left: Info -->
+        <div class="contact-info fade-in">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="section-title">Let's Talk About Your Property</h2>
+          <p class="section-sub">Have a question or ready to get started? Reach out and we'll get back to you promptly.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📞</div>
+              <div class="contact-detail-text">
+                <strong>Phone</strong>
+                <a href="tel:02203511400">022 035 1400</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">✉️</div>
+              <div class="contact-detail-text">
+                <strong>Email</strong>
+                <a href="mailto:admin@essentialkeeper.co.nz">admin@essentialkeeper.co.nz</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📍</div>
+              <div class="contact-detail-text">
+                <strong>Service Area</strong>
+                <span>Northshore, Central &amp; South Auckland, NZ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="fade-in">
+          <div id="contactFormWrap">
+            <form id="contactForm" novalidate>
+              <input type="hidden" name="access_key" value="e6ceac27-2e22-458f-a1e1-c1334243478b" />
+              <input type="hidden" name="subject" value="Website Enquiry — Essential Lawn &amp; Garden Keeper" />
+              <input type="checkbox" name="botcheck" style="display:none" />
+              <div class="form-group">
+                <label for="c-name">Full Name</label>
+                <input type="text" id="c-name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="c-phone">Phone</label>
+                <input type="tel" id="c-phone" name="phone" placeholder="021 123 4567" required />
+              </div>
+              <div class="form-group">
+                <label for="c-email">Email</label>
+                <input type="email" id="c-email" name="email" placeholder="you@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="c-msg">Message</label>
+                <textarea id="c-msg" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+            </form>
+          </div>
+          <div id="contactFormSuccess" class="form-success" style="display:none">
+            <div class="success-icon">✅</div>
+            <h3>Message Sent!</h3>
+            <p>Thanks for getting in touch. We'll respond within 24 hours.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- Logo -->
+        <div>
+          <div class="footer-logo">
+            <img src="/FullLogo_(2)_-_TOKASA_VAKALOLOMA.png" alt="Essential Lawn & Garden Keeper" onerror="this.style.display='none'" />
+            <div class="footer-logo-text">
+              Essential<br /><span>Lawn &amp; Garden Keeper</span>
+            </div>
+          </div>
+          <p style="margin-top:16px;font-size:0.82rem;color:var(--grey-600);max-width:240px;">
+            Northshore, Central &amp; South Auckland's trusted lawn and garden specialists.
+          </p>
+        </div>
+
+        <!-- Nav -->
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <span class="footer-nav-title">Navigation</span>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- CTAs -->
+        <div class="footer-ctas">
+          <a href="tel:02203511400" class="btn btn-outline">📞 Call Us</a>
+          <a href="#hero-form" class="btn btn-primary">Get Free Quote</a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 Essential Lawn &amp; Garden Keeper. All rights reserved.</p>
+        <p class="footer-credit">Website by <a href="https://www.itscold.com.au" target="_blank" rel="noopener">Go Polar Creative</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* =========================================
+       NAV SCROLL BEHAVIOR
+    ========================================= */
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    /* =========================================
+       MOBILE MENU
+    ========================================= */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      hamburger.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openMenu);
+    mobileClose.addEventListener('click', closeMenu);
+
+    document.querySelectorAll('.mobile-link, .mobile-menu .btn').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    /* =========================================
+       SCROLL-TRIGGERED FADE-IN
+    ========================================= */
+    const fadeEls = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          const delay = entry.target.dataset.delay || 0;
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    fadeEls.forEach((el, i) => {
+      const siblings = el.parentElement.querySelectorAll('.fade-in');
+      const idx = Array.from(siblings).indexOf(el);
+      el.dataset.delay = idx * 80;
+      observer.observe(el);
+    });
+
+    /* =========================================
+       FORM SUBMISSION (Web3Forms)
+    ========================================= */
+    async function handleFormSubmit(form, wrapId, successId) {
+      const submitBtn = form.querySelector('[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = 'Sending…';
+      submitBtn.disabled = true;
+
+      try {
+        const data = new FormData(form);
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: data,
+        });
+        const json = await res.json();
+
+        if (json.success) {
+          document.getElementById(wrapId).style.display = 'none';
+          document.getElementById(successId).style.display = 'block';
+        } else {
+          throw new Error(json.message || 'Submission failed');
+        }
+      } catch (err) {
+        submitBtn.innerHTML = 'Error — Try Again';
+        submitBtn.disabled = false;
+        setTimeout(() => {
+          submitBtn.innerHTML = originalText;
+        }, 3000);
+      }
+    }
+
+    document.getElementById('heroForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      handleFormSubmit(this, 'heroFormWrap', 'heroFormSuccess');
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      handleFormSubmit(this, 'contactFormWrap', 'contactFormSuccess');
+    });
+
+    /* =========================================
+       SMOOTH SCROLL FOR # LINKS
+    ========================================= */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    /* =========================================
+       LIGHTBOX
+    ========================================= */
+    const galleryImages = ['/1.jpg', '/707227579_1001469109070713_3782132960895992822_n.jpg', '/3.jpg'];
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const lbClose = document.getElementById('lbClose');
+    const lbPrev = document.getElementById('lbPrev');
+    const lbNext = document.getElementById('lbNext');
+    let lbIndex = 0;
+
+    function openLightbox(index) {
+      lbIndex = index;
+      lbImg.src = galleryImages[lbIndex];
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function showLbImage(index) {
+      lbIndex = (index + galleryImages.length) % galleryImages.length;
+      lbImg.src = galleryImages[lbIndex];
+    }
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => openLightbox(parseInt(item.dataset.index)));
+      item.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') openLightbox(parseInt(item.dataset.index));
+      });
+    });
+
+    lbClose.addEventListener('click', closeLightbox);
+    lbPrev.addEventListener('click', () => showLbImage(lbIndex - 1));
+    lbNext.addEventListener('click', () => showLbImage(lbIndex + 1));
+
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') showLbImage(lbIndex - 1);
+      if (e.key === 'ArrowRight') showLbImage(lbIndex + 1);
+    });
+  </script>
+
+</body>
+</html>
